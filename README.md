@@ -1,2 +1,12 @@
-# Vaja8-I2C-vezava-in-ADS1115
+# Vaja 8–I2C povezava z ADS1115 16-bit ADC pretv. terSTM32F0 Discovery
  
+## Cilj naloge:
+
+S pomočjo STM32CubeIDEin HAL knjižnicamisprogramirajte mikroprocesor tako, da bo preko I2C protokola prebral in prikazal analogne vrednosti iz 4-kanalnega ADC pretvornika ADS1115. Potrebujete tudi 4 trimerje/potenciometre, upore in kondenzator.Za prikaz spremenljivk potrebujete STMStudio(ali STM32CubeIDE v Debugnačinu).
+
+## Postopek inicilizacije
+- prizgeta se pina **PB7** in **PB6**.
+- Omogoča **dve** različni komunikaciji.
+- | ADS 1115: | SCL | SDA | ADDR | ALRT         | VDD           |
+  |-----------|-----|-----|------|--------------|---------------|
+  | STM32F0:  |     |     |      | (ni povezan) | 5 V ali 3.3 V |
