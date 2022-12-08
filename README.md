@@ -7,7 +7,6 @@ S pomočjo STM32CubeIDEin HAL knjižnicamisprogramirajte mikroprocesor tako, da 
 ## Postopek inicilizacije
 - prizgeta se pina **PB7** in **PB6**.
 - Omogoča **dve** različni komunikaciji.
-<<<<<<< HEAD
 - | ADS 1115: 	| SCL     	| SDA     	| ADDR                                                                 	| ALRT         	| VDD           	|
   |-----------	|---------	|---------	|----------------------------------------------------------------------	|--------------	|---------------	|
   | STM32F0:  	| **PB6** 	| **PB7** 	| Je povezan na GND Nato pa se preko<br> kondenzatorja(100nF) na +3.3V  	| (ni povezan) 	| 5 V ali 3.3 V 	|
