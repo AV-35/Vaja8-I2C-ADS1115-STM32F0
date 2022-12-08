@@ -21,3 +21,7 @@ S pomočjo STM32CubeIDEin HAL knjižnicamisprogramirajte mikroprocesor tako, da 
 ![](media\IMG_4676.MOV)
 
 https://github.com/AV-35/Vaja8-I2C-ADS1115-STM32F0/blob/main/media/IMG_4676.MOV
+
+https://github.com/AV-35/Vaja8-I2C-ADS1115-STM32F0/blob/a7ebb0321d8e0cdc02bc43049647f1918f14b24f/media/IMG_4676.MOV
+
+media/IMG_4676.MOV
