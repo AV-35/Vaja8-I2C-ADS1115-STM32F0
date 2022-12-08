@@ -19,3 +19,7 @@ S pomočjo STM32CubeIDEin HAL knjižnicamisprogramirajte mikroprocesor tako, da 
 ![Pinout](media/Screenshot_20221208_182220.png)
 
 
+
+
+https://user-images.githubusercontent.com/105905709/206526450-19797515-b7f1-4534-9472-7c3e794ff9ec.MOV
+
