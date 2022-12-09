@@ -11,7 +11,7 @@ S pomočjo STM32CubeIDEin HAL knjižnicamisprogramirajte mikroprocesor tako, da 
   |-----------	|---------	|---------	|----------------------------------------------------------------------	|--------------	|---------------	|
   | STM32F0:  	| **PB6** 	| **PB7** 	| **Je povezan na GND Nato pa se preko<br> kondenzatorja(100nF) na +3.3V**  	| (ni povezan) 	| 5 V ali 3.3 V 	|
 - SDA in SCL sta povezna durg preg drugega z dvema 10kΩ med tema dvema uporamo je priključena napetost +3.3 V.
-- Frekvvenca znaša 300KHz.
+- Frekvenca znaša 400KHz.
 
 
 ## Pinout
