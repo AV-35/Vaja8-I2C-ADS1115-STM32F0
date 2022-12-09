@@ -55,6 +55,12 @@ static void MX_I2C1_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
+#define ADS1115_ADDRESS 0x48
+unsigned char ADSwrite[6];
+int16_t reading;
+float voltage[4];
+
+const float voltageConv = 6.144/32768.0;
 
 /* USER CODE END 0 */
 
@@ -98,6 +104,34 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+	  for(int i=0; i<4; i++) {
+		  ADSwrite[0] = 0x01;//naslov registra
+		  switch(i) {// spreminjamo bite od 14 ÷ 12, str. 19:
+		  	  case(0):
+		  			  ADSwrite[1] = 0xC1;//binarno je 11000001
+		  	  	  	  break;
+		  	  case(1):
+		  			  ADSwrite[1] = 0xD1;//binarno je 11010001
+		  	  	  	  break;
+		  	  case(2):
+		  			  ADSwrite[1] = 0xE1;//binarno je 11100001
+		  	  	  	  break;
+		  	  case(3):
+		  			  ADSwrite[1] = 0xF1;//binarno je 11110001
+		  	  	  	  break;
+		  }
+		  ADSwrite[2] = 0x83;//to so biti od 7 ÷ 0: 10000011
+		  HAL_I2C_Master_Transmit(&hi2c1, ADS1115_ADDRESS<<1,ADSwrite,3, 100);
+		  ADSwrite[0] = 0x00;
+		  HAL_I2C_Master_Transmit(&hi2c1, ADS1115_ADDRESS<<1,ADSwrite,1, 100);
+		  HAL_Delay(20);
+		  HAL_I2C_Master_Receive(&hi2c1, ADS1115_ADDRESS<<1,ADSwrite,2, 100);
+		  reading = (ADSwrite[0] << 8 | ADSwrite[1]);
+		  if (reading < 0 ) {
+			  reading = 0;
+		  }
+		  voltage[i] = reading*voltageConv;
+	  }
   }
   /* USER CODE END 3 */
 }
