@@ -60,8 +60,8 @@ all: main-build
 main-build: vaja8_I2C_ADS1115.elf secondary-outputs
 
 # Tool invocations
-vaja8_I2C_ADS1115.elf vaja8_I2C_ADS1115.map: $(OBJS) $(USER_OBJS) C:\Users\Vidmar\Documents\GitHub\Vaja8-I2C-ADS1115-STM32F0\vaja8_I2C_ADS1115\STM32F051R8TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "vaja8_I2C_ADS1115.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m0 -T"C:\Users\Vidmar\Documents\GitHub\Vaja8-I2C-ADS1115-STM32F0\vaja8_I2C_ADS1115\STM32F051R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="vaja8_I2C_ADS1115.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+vaja8_I2C_ADS1115.elf vaja8_I2C_ADS1115.map: $(OBJS) $(USER_OBJS) C:\Users\U207.16\Documents\GitHub\Vaja8-I2C-ADS1115-STM32F0\vaja8_I2C_ADS1115\STM32F051R8TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "vaja8_I2C_ADS1115.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m0 -T"C:\Users\U207.16\Documents\GitHub\Vaja8-I2C-ADS1115-STM32F0\vaja8_I2C_ADS1115\STM32F051R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="vaja8_I2C_ADS1115.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
