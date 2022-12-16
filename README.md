@@ -27,4 +27,4 @@ https://user-images.githubusercontent.com/105905709/208051510-2de343cb-afa7-4bbf
 
 
 
-<img src="media/ADA51822-77C2-49C5-A964-88D2E8B5B81C.jpeg" alt="drawing" width="200"/>
+<img src="media/ADA51822-77C2-49C5-A964-88D2E8B5B81C.jpeg" alt="drawing" width="200" class="rotateimg180">/>
