@@ -19,6 +19,10 @@ S pomočjo STM32CubeIDEin HAL knjižnicamisprogramirajte mikroprocesor tako, da 
 
 ![Pinout](media/Screenshot_20221208_182220.png)
 
+## I2C Config
+
+![I2C Config](media/Screenshot_20221216_174152.png)
+
 
 ## Video
 
@@ -26,6 +30,7 @@ https://user-images.githubusercontent.com/105905709/208051510-2de343cb-afa7-4bbf
 
 ## Slika vezja
 
-
-
 <img src="media/ADA51822-77C2-49C5-A964-88D2E8B5B81C.jpeg" alt="drawing" width="800" class="rotateimg180"/>
+
+## Komentart
+koda deluje brezhibno.
