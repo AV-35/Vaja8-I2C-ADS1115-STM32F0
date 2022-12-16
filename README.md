@@ -13,6 +13,7 @@ S pomočjo STM32CubeIDEin HAL knjižnicamisprogramirajte mikroprocesor tako, da 
 - SDA in SCL sta povezna durg preg drugega z dvema 10kΩ med tema dvema uporamo je priključena napetost +3.3 V.
 - Frekvenca znaša 400KHz.
 - 1001000 = **48** HEX.
+- ±6.144V
 
 ## Pinout
 
